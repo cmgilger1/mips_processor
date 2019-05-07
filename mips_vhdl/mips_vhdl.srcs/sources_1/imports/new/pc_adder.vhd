@@ -1,17 +1,17 @@
 --------------------------------------------------------------------------------
---  pc_adder.vhd
+-- adder.vhd
 --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity pc_adder is
+entity adder is
     port ( pc : in std_logic_vector (31 downto 0);
            res : out std_logic_vector (31 downto 0);
            cout : out std_logic     
            );
-end pc_adder;
+end adder;
 
-architecture Structural of pc_adder is
+architecture Structural of adder is
 
     -- full adder component
     component full_adder
